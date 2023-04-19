@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2023-04-13T23:27:01.670Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="ZPjM3f9kdOMBWZi02k-6" version="21.1.6" type="device">
+  <diagram name="Page-1" id="hcWEkEdoMzKYx4aCE_8D">
+    <mxGraphModel dx="1159" dy="1473" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="y1GBgIsQ1bMkkRzPsxt4-1" value="#3.Result-page&lt;br&gt;-body with a header with a h1&lt;br&gt;-icon or logo&lt;br&gt;-a main displaying the selected team of six pokemon and their respected sprites and a movie choice based off the selected team of pokemon&lt;br&gt;-an image of the movie poster&lt;br&gt;-a catch phrase from the movie&lt;br&gt;-footer date created,copyright&lt;br&gt;&lt;br&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="294.5" y="476" width="235" height="235" as="geometry" />
+        </mxCell>
+        <mxCell id="y1GBgIsQ1bMkkRzPsxt4-2" value="#1.Home-page&lt;br&gt;-header with h1&lt;br&gt;-body with a main &lt;br&gt;-a main with a &amp;lt;p&amp;gt; within the main describing the webapp&amp;nbsp;&lt;br&gt;-main with a logo/image&lt;br&gt;- a link to the submission/form page&lt;br&gt;footer with date created and copyright" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="294.5" y="-201" width="231" height="231" as="geometry" />
+        </mxCell>
+        <mxCell id="y1GBgIsQ1bMkkRzPsxt4-3" value="#2.Submission-page&lt;br&gt;-body with a main&lt;br&gt;-header with h1&amp;nbsp;&lt;br&gt;&amp;nbsp;-main with the icon or logo from homepage&lt;br&gt;-main with a dropdown clickable list of pokemon to choose from&lt;br&gt;-main with a form to input saved and clicked pokemon selections&lt;br&gt;-main with a submit button that links to result page&lt;br&gt;-footer date created,copyright&lt;br&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="294.5" y="128" width="232.5" height="232.5" as="geometry" />
+        </mxCell>
+        <mxCell id="y1GBgIsQ1bMkkRzPsxt4-6" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="407" y="50" as="sourcePoint" />
+            <mxPoint x="407" y="122" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y1GBgIsQ1bMkkRzPsxt4-8" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="408" y="373" as="sourcePoint" />
+            <mxPoint x="408" y="464" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="408" y="457" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pLsELOdg0TiXxCXPPHqV-1" value="-by using a datalist you can search through the entirety of the pokemon list&amp;nbsp;&lt;br&gt;-then you are presented with six input fields where you will enter your six choices&lt;br&gt;-each pokemon is classified by a type&lt;br&gt;-each type will identify with a specific genre&lt;br&gt;-and then populate an arrray with six movie genres that will&lt;br&gt;-then use function with math.floor syntax to grab your randomized choice of movie&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="223" y="-592" width="453" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="pLsELOdg0TiXxCXPPHqV-2" value="script.js" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="397" y="-623" width="59" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
