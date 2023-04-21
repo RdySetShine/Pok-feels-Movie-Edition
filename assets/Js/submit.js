@@ -39,7 +39,7 @@ submitBtn.addEventListener('click', async function(event) {
 const submitBtn = document.getElementById('submit');
 
 // Add click event listener to submit button
-submitBtn.addEventListener('click', async function(event) {
+submitBtn.addEventListener('click', async function (event) {
     event.preventDefault();
 
     // Get all Pokemon inputs
