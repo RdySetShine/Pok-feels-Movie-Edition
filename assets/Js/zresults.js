@@ -1,5 +1,6 @@
 var key = "8fcadd95"; // store thes api key incase needed else where
 var pokeAr;
+var pokeTypeAr = [];
 var pokeType;
 var genre;
 
@@ -53,7 +54,7 @@ var plotEl = document.getElementById('plot');
 // order of indices: drama, thriller, comedy, fantasy, romance, sci-fi, adventure, sports, action, western, horror, musical, mystery
 // a nested array of top 20 movies of the above genres
 var movList = [
-    ['taxi+driver', 'pulp+fiction', 'the+godfather', 'go+now', 'boyhood', "pan's+labrynth", "what's+eating+gilbert+grape", "billy+elliot", "little+miss+sunshine", "slumdog+millionaire", "sorry+we+missed+you", "mommy", "infernal+affairs", "so+long%2C+my+son", "dearest", "whiplash", "joker", "requiem+for+a+dream", "the+broken+circle+breakdown", "lion"],
+    ['taxi+driver', 'pulp+fiction', 'the+godfather', 'go+now', 'boyhood', "pan's+labyrinth", "what's+eating+gilbert+grape", "billy+elliot", "little+miss+sunshine", "slumdog+millionaire", "sorry+we+missed+you", "mommy", "infernal+affairs", "so+long%2C+my+son", "dearest", "whiplash", "joker", "requiem+for+a+dream", "the+broken+circle+breakdown", "lion"],
     ["identity", "se7en", "fallen", "the+bone+collector", "secret+window", "the+book+of+eli", "deja+vu", "donnie+darko", "sin+city", "pulp+fiction", "kill+bill:+vol.+1", "kill+bill:+vol.+2", "training+day", "the+hateful+eight", "the+call", "the+recruit", "lucky+number+slevin", "shutter+island", "baby+driver", "what+lies+beneath"],
     ["scrooged", "groundhog+day", "friday", "ted", "zombieland", "the+nutty+professor", "the+truman+show", "fear+and+loathing+in+las+vegas", "the+waterboy", "american+pie", "bad+boys", "scary+movie", "bruce+almighty", "the+longest+yard", "the+bucket+list", "tropic+thunder", "big+momma's+house", "movie+43", "22+jump+street", "central+intelligence"],
     ["the+super+mario+bros.+movie", "dungeons+%26+dragons%3A+honor+among+thieves", "barbie", "shazam!+fury+of+the+gods", "the+marvels", "renfield", "avatar:+the+way+of+water", "chupa", "super+mario+bros.", "everything+everywhere+all+at+once", "the+portable+door", "puss+in+boots%3A+the+last+wish”, “the+little+mermaid", "suzume", "shazam!", "peter+pan+%26+wendy", "spider-man%3A+across+the+spider-verse", "harry+potter+and+the+sorcerer's+stone", "avatar", "matilda"],
@@ -67,6 +68,13 @@ var movList = [
     ["praise+this", "the+sound+of+music", "grease", "wonka", "guillermo+del+toro's+pinocchio", "the+greatest+showman", "sing+2", "encanto", "moana", "la+la+land", "the+prince+of+egypt", "jesus+christ+superstar", "the+lion+king", "wicked", "roald+dahl's+matilda+the+musical", "aladdin", "easter+parade", "the+wizard+of+oz", "beauty+and+the+beast", "mamma+mia!"],
     ["scream+vi", "murder+mystery", "knives+out", "infinity+pool", "i+see+you", "knock+at+the+cabin", "luther%3A+the+fallen+sun", "nope", "glass+onion", "killers+of+the+flower+moon", "gaslight", "midsommar", "blade+runner+2049", "smile", "scream", "fast+x", "where+the+crawdads+sing", "super+8", "missing", "the+pale+blue+eye"]
 ];
+
+
+// grabs the submit page information from the localstorage to be used by the movRandom function
+pokeAr = JSON.parse(localStorage.getItem('pokemonData'));
+for (var j in pokeAr) {
+    pokeTypeAr.push(pokeAr[j].type);
+};
 
 // contacts the api to access the title, poster, and plot information for the html
 async function getApi() {
@@ -83,23 +91,11 @@ async function getApi() {
             populate()
         })
 }
-// for (var i = 0; i < 6; i++) {
-//     localStore();
-// }
-pokeAr = JSON.parse(localStorage.getItem('pokemonType'));
-console.log(pokeAr);
-// localStore();
 movRandom();
 getApi();
 
-// grabs the submit page information from the localstorage to be used here
 
-   
 
-// function localStore() {
-    
-//     // console.log(pokeAr);
-// };
 
 // populates the html elements with the follow information
 function populate() {
@@ -110,8 +106,9 @@ function populate() {
 
 // randomly selects a movie title form the above arrays to feed into the API call to allow us to grab information for the movie suggestion
 function movRandom() {
-    var random = Math.floor(Math.random() * pokeAr.length);
-    pokeType = pokeAr[random];
+    var random = Math.floor(Math.random() * pokeTypeAr.length);
+    console.log(random);
+    pokeType = pokeTypeAr[random];
     console.log(pokeType);
     genre = compare[pokeType];
     genreId = compareInd[genre]
@@ -121,4 +118,36 @@ function movRandom() {
 
 }
 
+// Get the Pokemon data from local storage
+const pokemonData = JSON.parse(localStorage.getItem('pokemonData'));
 
+// Get the container element to display the Pokemon
+const pokemonContainer = document.getElementById('pokemonContainer');
+
+// Loop through each Pokemon and create a new element to display its name, sprite, and type
+for (const pokemonName in pokemonData) {
+    const pokemonType = pokemonData[pokemonName].type;
+    const pokemonSpriteUrl = pokemonData[pokemonName].spriteUrl;
+
+    // Create a new div element for the Pokemon
+    const pokemonDiv = document.createElement('div');
+    pokemonDiv.classList.add('pokemon');
+
+    // Create a new h3 element for the Pokemon name
+    const pokemonNameHeading = document.createElement('h3');
+    pokemonNameHeading.textContent = pokemonName;
+    pokemonDiv.appendChild(pokemonNameHeading);
+
+    // Create a new img element for the Pokemon sprite
+    const pokemonSpriteImg = document.createElement('img');
+    pokemonSpriteImg.src = pokemonSpriteUrl;
+    pokemonDiv.appendChild(pokemonSpriteImg);
+
+    // Create a new p element for the Pokemon type
+    const pokemonTypeParagraph = document.createElement('p');
+    pokemonTypeParagraph.textContent = `Type: ${pokemonType}`;
+    pokemonDiv.appendChild(pokemonTypeParagraph);
+
+    // Append the Pokemon div to the container
+    pokemonContainer.appendChild(pokemonDiv);
+}
