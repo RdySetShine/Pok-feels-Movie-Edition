@@ -6,7 +6,6 @@
 }
 
 #lastPage {
-
     position: left;
     justify-content: center;
     display: flex;
@@ -20,7 +19,6 @@
 
 
 #end {
-
     border: 2px solid rgb(26, 25, 6);
     border-radius: 8px;
     border-width: 3px;
@@ -30,12 +28,24 @@
     margin-top: 15px;
     margin-bottom: 15px;
     box-shadow: inset;
+}
 
+#pokemonContainer {
+    margin-top: 20px;
 }
 
 #resultsContainor {
-    margin-top: 10px;
+    margin-top: 20px;
     border-top: 3px solid black;
+}
+
+h3,
+#typeBox {
+font-size: 40px;
+}
+
+#imgBox {
+    height: 200px;
 }
 
 #movieBox {

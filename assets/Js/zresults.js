@@ -132,6 +132,8 @@ for (const pokemonName in pokemonData) {
     // Create a new div element for the Pokemon
     const pokemonDiv = document.createElement('div');
     pokemonDiv.classList.add('pokemon');
+    pokemonDiv.setAttribute('id', "pokeBox");
+    pokemonDiv.setAttribute('class', 'col-6 justify-content-around');
 
     // Create a new h3 element for the Pokemon name
     const pokemonNameHeading = document.createElement('h3');
@@ -140,11 +142,13 @@ for (const pokemonName in pokemonData) {
 
     // Create a new img element for the Pokemon sprite
     const pokemonSpriteImg = document.createElement('img');
+    pokemonSpriteImg.setAttribute('id', 'imgBox');
     pokemonSpriteImg.src = pokemonSpriteUrl;
     pokemonDiv.appendChild(pokemonSpriteImg);
 
     // Create a new p element for the Pokemon type
     const pokemonTypeParagraph = document.createElement('p');
+    pokemonTypeParagraph.setAttribute('id', "typeBox");
     pokemonTypeParagraph.textContent = `Type: ${pokemonType}`;
     pokemonDiv.appendChild(pokemonTypeParagraph);
 
