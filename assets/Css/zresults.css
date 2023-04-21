@@ -54,6 +54,8 @@ font-size: 40px;
 
 #poster {
     height: 800px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h4 {
