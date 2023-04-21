@@ -1,7 +1,9 @@
-var key = "8fcadd95";
-var pokeAr = ["electric", "fire", "electric", "fairy", "rock", "normal"];
+var key = "8fcadd95"; // store thes api key incase needed else where
+var pokeAr;
 var pokeType;
 var genre;
+
+// used to assign a movie genre based on the type of pokemon choosen on submit page
 var compare = {
     fire: 'drama',
     electric: 'thriller',
@@ -23,6 +25,8 @@ var compare = {
     bug: 'mystery'
 };
 var movName;
+
+//assigns an index value to be used later when randomly choosing a movie title
 var compareInd = {
     drama: 0,
     thriller: 1,
@@ -47,7 +51,7 @@ var posterEl = document.getElementById('poster');
 var plotEl = document.getElementById('plot');
 
 // order of indices: drama, thriller, comedy, fantasy, romance, sci-fi, adventure, sports, action, western, horror, musical, mystery
-
+// a nested array of top 20 movies of the above genres
 var movList = [
     ['taxi+driver', 'pulp+fiction', 'the+godfather', 'go+now', 'boyhood', "pan's+labrynth", "what's+eating+gilbert+grape", "billy+elliot", "little+miss+sunshine", "slumdog+millionaire", "sorry+we+missed+you", "mommy", "infernal+affairs", "so+long%2C+my+son", "dearest", "whiplash", "joker", "requiem+for+a+dream", "the+broken+circle+breakdown", "lion"],
     ["identity", "se7en", "fallen", "the+bone+collector", "secret+window", "the+book+of+eli", "deja+vu", "donnie+darko", "sin+city", "pulp+fiction", "kill+bill:+vol.+1", "kill+bill:+vol.+2", "training+day", "the+hateful+eight", "the+call", "the+recruit", "lucky+number+slevin", "shutter+island", "baby+driver", "what+lies+beneath"],
@@ -64,16 +68,14 @@ var movList = [
     ["scream+vi", "murder+mystery", "knives+out", "infinity+pool", "i+see+you", "knock+at+the+cabin", "luther%3A+the+fallen+sun", "nope", "glass+onion", "killers+of+the+flower+moon", "gaslight", "midsommar", "blade+runner+2049", "smile", "scream", "fast+x", "where+the+crawdads+sing", "super+8", "missing", "the+pale+blue+eye"]
 ];
 
+// contacts the api to access the title, poster, and plot information for the html
 async function getApi() {
     var movieUrl = `http://www.omdbapi.com/?t=${movName}&apikey=${key}`
-    // console.log(genre);
-    // console.log(compare[pokeType]);
     await fetch(movieUrl)
         .then(function (response) {
             return response.json();
         })
         .then(function (data) {
-            // movRandom();
             poster = data.Poster;
             title = data.Title;
             plot = data.Plot;
@@ -81,9 +83,25 @@ async function getApi() {
             populate()
         })
 }
+// for (var i = 0; i < 6; i++) {
+//     localStore();
+// }
+pokeAr = JSON.parse(localStorage.getItem('pokemonType'));
+console.log(pokeAr);
+// localStore();
 movRandom();
 getApi();
 
+// grabs the submit page information from the localstorage to be used here
+
+   
+
+// function localStore() {
+    
+//     // console.log(pokeAr);
+// };
+
+// populates the html elements with the follow information
 function populate() {
     titleEl.innerHTML = `${title}`;
     posterEl.setAttribute('src', `${poster}`);
