@@ -40,8 +40,8 @@ Shihan Zhang
 
 ##Live Link
 
-
+https://massicottec.github.io/poke-feels-movie-edition/
 
 ##GitHub Link
 
-
+https://github.com/massicottec/poke-feels-movie-edition
