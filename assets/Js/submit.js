@@ -19,6 +19,7 @@ async function getPokemon(num) {
     desc: pokemonDesc,
   };
 }
+
 function updatePokemon(num) {
   console.log(pokedex[num]);
   document.getElementById("pokemon-img").src = pokedex[num]["img"];
@@ -40,6 +41,7 @@ function updatePokemon(num) {
     console.log(typesDiv);
   }
 }
+
 window.onload = async function () {
   // getPokemon(1);
   for (let i = 1; i <= pokemonCount; i++) {
@@ -59,40 +61,40 @@ window.onload = async function () {
 const submitBtn = document.getElementById('submit');
 
 // Add click event listener to submit button
-submitBtn.addEventListener('click', async function(event) {
-    event.preventDefault();
+submitBtn.addEventListener('click', async function (event) {
+  event.preventDefault();
 
-    // Get all Pokemon inputs
-    const pokeInputs = document.querySelectorAll('.pokeName');
+  // Get all Pokemon inputs
+  const pokeInputs = document.querySelectorAll('.pokeName');
 
-    // Create an object to store Pokemon data
-    const pokemonData = {};
+  // Create an object to store Pokemon data
+  const pokemonData = {};
 
-    // Loop through each Pokemon input
-    for (let i = 0; i < pokeInputs.length; i++) {
-        // Get Pokemon name value and convert to lowercase
-        const pokeName = pokeInputs[i].value.toLowerCase();
+  // Loop through each Pokemon input
+  for (let i = 0; i < pokeInputs.length; i++) {
+    // Get Pokemon name value and convert to lowercase
+    const pokeName = pokeInputs[i].value.toLowerCase();
 
-        // Fetch Pokemon data from API
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}`);
-        const data = await response.json();
+    // Fetch Pokemon data from API
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}`);
+    const data = await response.json();
 
-        // Extract Pokemon type and sprite URL from API response
-        const pokeType = data.types[0].type.name; // Assumes only one type per Pokemon, modify as needed
-        const pokeSpriteUrl = data.sprites.front_default;
+    // Extract Pokemon type and sprite URL from API response
+    const pokeType = data.types[0].type.name; // Assumes only one type per Pokemon, modify as needed
+    const pokeSpriteUrl = data.sprites.front_default;
 
-        // Add Pokemon name, type, and sprite URL as key-value pairs to the object
-        pokemonData[pokeName] = {
-            type: pokeType,
-            spriteUrl: pokeSpriteUrl
-        };
-    }
+    // Add Pokemon name, type, and sprite URL as key-value pairs to the object
+    pokemonData[pokeName] = {
+      type: pokeType,
+      spriteUrl: pokeSpriteUrl
+    };
+  }
 
-    // Store Pokemon data in local storage
-    localStorage.setItem('pokemonData', JSON.stringify(pokemonData));
+  // Store Pokemon data in local storage
+  localStorage.setItem('pokemonData', JSON.stringify(pokemonData));
 
-    // Redirect to zresults.html
-    window.location.href = './zresults.html';
+  // Redirect to zresults.html
+  window.location.href = './zresults.html';
 });
 
 
