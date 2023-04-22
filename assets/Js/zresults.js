@@ -239,7 +239,7 @@ console.log(pokeTypeAr);
 console.log(pokeAr);
 // contacts the api to access the title, poster, and plot information for the html
 async function getApi() {
-    var movieUrl = `http://www.omdbapi.com/?t=${movName}&apikey=${key}`
+    var movieUrl = `https://www.omdbapi.com/?t=${movName}&apikey=${key}`
     await fetch(movieUrl)
         .then(function (response) {
             return response.json();
