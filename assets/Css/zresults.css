@@ -5,8 +5,7 @@
     font-family: 'Press Start 2P', cursive;
 }
 
-header,
-footer {
+header, footer {
     background-color: #7e308e;
     color: #fff;
 }
@@ -20,9 +19,8 @@ footer {
     opacity: 0.85;
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../Images/final-pic-pokemon.jpeg");
     background-repeat: no-repeat;
-    background-size: 100% 110%
+    background-size: 100% 100%
 }
-
 
 #end {
     border: 2px solid rgb(26, 25, 6);
@@ -36,25 +34,35 @@ footer {
     box-shadow: inset;
 }
 
-h2 {
-    margin: 0;
-}
-
 #resultsContainor {
     padding-top: 10px;
     border-top: 3px solid black;
 }
 
 h3 {
-    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #350735;
+    border: 2px solid #350735;
+    border-radius: 8px;
+    border-width: 3px;
+    font-size: 25px;
     background-color: #fdd23c;
-    border: 3px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #typeBox {
-    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #350735;
+    border: 2px solid #350735;
+    border-radius: 8px;
+    border-width: 3px;
+    font-size: 20px;
     background-color: #fdd23c;
-    border: 3px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #imgBox {
@@ -76,19 +84,61 @@ h4 {
 }
 
 #plot {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #350735;
+    border: 2px solid #350735;
+    border-radius: 8px;
+    border-width: 3px;
+    font-size: 25px;
+    background-color: #fdd23c;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-top: 75px;
     font-size: 20px;
 }
 
 button {
-    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #350735;
+    border: 4px solid #350735;
+    border-radius: 8px;
+    border-width: 3px;
+    font-size: 25px;
+    background-color: #fdd23c;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 a {
-    color: #fff;
+    color: #350735;
+}
+
+#movieName {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #350735;
+    border: 2px solid #350735;
+    border-radius: 8px;
+    border-width: 3px;
+    font-size: 25px;
+    background-color: #fdd23c;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 footer {
-    margin-top: 10px;
+    padding-top: 15px;
+    display: inline;
+    color: #350735;
+    border: 2px solid #350735;
+    border-radius: 8px;
+    border-width: 3px;
+    font-size: 25px;
+    background-color: #fdd23c;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #continue {

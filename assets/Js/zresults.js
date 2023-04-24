@@ -44,6 +44,7 @@ var compareInd = {
     mystery: 12
 };
 
+
 var poster;
 var plot;
 var title;
@@ -135,7 +136,7 @@ for (const pokemonName in pokemonData) {
 
     // Create a new h3 element for the Pokemon name
     const pokemonNameHeading = document.createElement('h3');
-    pokemonNameHeading.textContent = pokemonName;
+    pokemonNameHeading.textContent = pokemonName.toUpperCase();
     pokemonDiv.appendChild(pokemonNameHeading);
 
     // Create a new img element for the Pokemon sprite
@@ -147,9 +148,13 @@ for (const pokemonName in pokemonData) {
     // Create a new p element for the Pokemon type
     const pokemonTypeParagraph = document.createElement('p');
     pokemonTypeParagraph.setAttribute('id', "typeBox");
-    pokemonTypeParagraph.textContent = `Type: ${pokemonType}`;
+    pokemonTypeParagraph.textContent = `Type: ${pokemonType}`.toUpperCase();
     pokemonDiv.appendChild(pokemonTypeParagraph);
 
     // Append the Pokemon div to the container
     pokemonContainer.appendChild(pokemonDiv);
 }
+
+
+
+
