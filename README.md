@@ -12,7 +12,7 @@ Home Page: The home page displays a warm welcome message and an introduction to 
 
 ![Alt text](assets/Images/mock-up-2.png)
 
-Submission Page: The submission page consists of 6 user input boxes where users can enter their 6 choices of Pokémon. There is also a Pokédex that displays all of the Pokémon available to choose from. Users can easily select their desired Pokémon by clicking on them in the Pokédex. Lastly, there is a "Submit" button that users can click to submit their choices.
+Submission Page: The submission page consists of 6 user input boxes where users can enter their 6 choices of Pokémon. There is also a Pokédex that displays all of the Pokémon available to choose from. Users can easily select their desired Pokémon by entering their Pokémon of choice from the Pokémon Legend. Lastly, there is a "Submit" button that users can click to submit their choices.
 
 ![Alt text](assets/Images/mock-up-3.png)
 
