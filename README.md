@@ -6,7 +6,7 @@ Welcome to the Pokémon Feels Movie Edition Web Application! This interactive we
 
 ##Features
 
-![Screenshot](Users/brunorosarini/Desktop/Poke-Feels-Project/poke-feels-movie-edition/assets/Images/mock-up-1.png)
+![Alt text](assets/images/mock-up-1.png)
 
 Home Page: The home page displays a warm welcome message and an introduction to the application. It also features a "Click Here" button that directs users to the submission page.
 
