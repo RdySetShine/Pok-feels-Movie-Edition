@@ -1,10 +1,10 @@
 # Poké-Feels-Movie-Edition
 
-##Description
+## Description
 
 Welcome to the Pokémon Feels Movie Edition Web Application! This interactive web application allows users to choose their favorite Pokémon and receive a randomly selected movie recommendation based on their choices.
 
-##Features
+## Features
 
 ![Alt text](assets/Images/mock-up-1.png)
 
@@ -20,7 +20,7 @@ Results Page: Once the user submits their Pokémon choices, they are directed to
 
 
 
-##How To Use
+## How To Use
 
 1.Access the home page of the web application.
 2.Read the welcome message and introduction.
@@ -29,28 +29,28 @@ Results Page: Once the user submits their Pokémon choices, they are directed to
 5.Click the "Submit" button to submit your Pokémon choices.
 6.You will be directed to the results page where your 6 Pokémon choices will be displayed, along with a randomly selected movie recommendation based on your choices.
 
-##A Message From The Team!🎯
+## A Message From The Team!🎯
 
 We hope you enjoy using the Pokémon Feels Movie Edition Web Application and have fun exploring different movie recommendations based on your favorite Pokémon!
 
-##Authors
+## Authors
 
 Keegan Omel,
 Chris Massicottec,
 Bruno Rosarini,
 Kevin Ha,
 
-##Contributors
+## Contributors
 
 Austin Grech
 Luis Sanchez
 Krishna - Assistant Instructor
 Shihan Zhang
 
-##Live Link
+## Live Link
 
 https://massicottec.github.io/poke-feels-movie-edition/
 
-##GitHub Link
+## GitHub Link
 
 https://github.com/massicottec/poke-feels-movie-edition
