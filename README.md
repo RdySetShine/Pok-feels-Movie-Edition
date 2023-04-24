@@ -22,12 +22,12 @@ Results Page: Once the user submits their Pokémon choices, they are directed to
 
 ## How To Use
 
--1. Access the home page of the web application.
--2. Read the welcome message and introduction.
--3. Click the "Start Your Journey Here" button to go to the submission page.
--4. On the submission page, enter your 6 choices of Pokémon in the user input boxes.
--5. Click the "Submit" button to submit your Pokémon choices.
--6. You will be directed to the results page where your 6 Pokémon choices will be displayed, along with a randomly selected movie recommendation based on your choices.
+- 1. Access the home page of the web application.
+- 2. Read the welcome message and introduction.
+- 3. Click the "Start Your Journey Here" button to go to the submission page.
+- 4. On the submission page, enter your 6 choices of Pokémon in the user input boxes.
+- 5. Click the "Submit" button to submit your Pokémon choices.
+- 6. You will be directed to the results page where your 6 Pokémon choices will be displayed, along with a randomly selected movie recommendation based on your choices.
 
 ## A Message From The Team!🎯
 
