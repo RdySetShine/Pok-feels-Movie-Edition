@@ -18,6 +18,8 @@ Submission Page: The submission page consists of 6 user input boxes where users 
 
 Results Page: Once the user submits their Pokémon choices, they are directed to the results page. Here, the user's 6 chosen Pokémon are displayed along with a randomly selected movie recommendation. The movie recommendation is based on the user's Pokémon choices, adding a fun and personalized touch to the web application.
 
+
+
 ##How To Use
 
 1.Access the home page of the web application.
