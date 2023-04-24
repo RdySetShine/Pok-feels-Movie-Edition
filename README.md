@@ -10,11 +10,11 @@ Welcome to the Pokémon Feels Movie Edition Web Application! This interactive we
 
 Home Page: The home page displays a warm welcome message and an introduction to the application. It also features a "Click Here" button that directs users to the submission page.
 
-![Screenshot](url/to/Users/brunorosarini/Desktop/Poke-Feels-Project/poke-feels-movie-edition/assets/Images/mock-up-2.png)
+![Alt text](assets/Images/mock-up-2.png)
 
 Submission Page: The submission page consists of 6 user input boxes where users can enter their 6 choices of Pokémon. There is also a Pokédex that displays all of the Pokémon available to choose from. Users can easily select their desired Pokémon by clicking on them in the Pokédex. Lastly, there is a "Submit" button that users can click to submit their choices.
 
-![Screenshot](url/to/Users/brunorosarini/Desktop/Poke-Feels-Project/poke-feels-movie-edition/assets/Images/mock-up-3.png)
+![Alt text](assets/Images/mock-up-3.png)
 
 Results Page: Once the user submits their Pokémon choices, they are directed to the results page. Here, the user's 6 chosen Pokémon are displayed along with a randomly selected movie recommendation. The movie recommendation is based on the user's Pokémon choices, adding a fun and personalized touch to the web application.
 
